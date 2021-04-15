@@ -1,6 +1,7 @@
-### **Dimas Andhika Diputra**
+### Hi, I'm **Dimas Andhika Diputra** 👋
 
-I am just a 14 years old student who is interested in and has a hobby in programming, currently I'm learning Vue JS and Node JS. All of my repo are just an implementation of what I have learned so far.
+🌱 I’m currently learning Vue JS, Node JS, and express<br/>
+⚡ Fun fact: I am just a 14 years old student who is interested in and has a hobby in programming, currently I'm learning Vue JS and Node JS. All of my repo are just an implementation of what I have learned so far.
 
 <p align="center">
   <p>
