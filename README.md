@@ -1,7 +1,7 @@
 ### Hi, I'm **Dimas Andhika Diputra** 👋
 
 🌱 I’m currently learning Vue JS, Node JS, and express<br/>
-⚡ Fun fact: I am just a 14 years old student who is interested in and has a hobby in programming.
+⚡ Fun fact: I am just a 14 years old student who is interested in and has a hobby in programming.<br/>
 🔭 All of my skills: 
 - (Basic) HTML, CSS, Javascript, SCSS
 - (Framework) Bootstrap, Vuejs, Vuetify, Jquery
