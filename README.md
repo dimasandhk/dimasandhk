@@ -5,7 +5,7 @@
 🔭 All of my skills:<br/>
 -> (Basic) HTML, CSS, Javascript, SCSS<br/>
 -> (Framework) Bootstrap, Tailwind, Vuejs, Vuetify, Jquery<br />
--> (Backend) NodeJS, Mongodb (Learning), Express, Hapi<br />
+-> (Backend) NodeJS, Mongodb, Mongoose (Learning), Express, Hapi<br />
 -> (Tools) GIT, Basic Command Line, Figma
 
 <p align="center">
