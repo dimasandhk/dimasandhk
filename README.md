@@ -4,7 +4,7 @@
 ⚡ Fun fact: I am just a 14 years old student who is interested in and has a hobby in programming.<br/>
 🔭 All of my skills:<br/>
 -> (Basic) HTML, CSS, Javascript, SCSS<br/>
--> (Framework) Bootstrap, Tailwind, Vuejs, Vuetify, **ReactJS (Learning)**, Jquery<br />
+-> (Framework) Bootstrap, Vuejs, Vuetify, **ReactJS (Learning)**, Jquery<br />
 -> (Backend) NodeJS, Mongodb, **Mongoose (Learning)**, Express, Hapi<br />
 -> (Tools) GIT, Basic Command Line, Figma
 
