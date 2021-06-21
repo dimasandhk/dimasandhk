@@ -16,3 +16,4 @@
     <img height="150" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dimasandhk&hide=html,css&layout=compact&show_icons=true&theme=dark&langs_count=10&https://github.com/dimas-ngoding/github-readme-stats" alt="dimas-ngoding" />
   </p>
 </p>
+(Except HTML and CSS)
