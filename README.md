@@ -7,13 +7,17 @@
 -> (Framework) Bootstrap, Vuejs, Vuetify, **ReactJS (Learning)**, Jquery, **Flutter (Learning)**<br />
 -> (Backend) NodeJS, Mongodb, Mongoose, Express, Hapi<br />
 -> (Tools) GIT, Basic Command Line, Figma
-
+<hr>
+<h3 align="center">
+    Github Status
+  </h3>
 <p align="center">
-  <p>
+  <p align="center">
     <img height="150" align="center" src="https://github-readme-stats.vercel.app/api?username=dimasandhk&show_icons=true&include_all_commits=true&count_private=true&theme=dark" alt="dimas-ngoding" />
-  </p>
-  <p>
     <img height="150" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dimasandhk&hide=html,css&layout=compact&show_icons=true&theme=dark&langs_count=10&https://github.com/dimas-ngoding/github-readme-stats" alt="dimas-ngoding" />
   </p>
+  <p align="center">
+    (Except HTML and CSS)
+  </p>
 </p>
-(Except HTML and CSS)
+
