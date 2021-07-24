@@ -1,11 +1,11 @@
 ### Hi, I'm **Dimas Andhika Diputra** 👋
 
-🌱 I’m currently learning Vue JS, Node JS, and express<br/>
+🌱 I’m currently learning React and Flutter<br/>
 ⚡ Fun fact: I am just a 14 years old student who is interested in and has a hobby in programming.<br/>
 🔭 All of my skills:<br/>
--> (Basic) HTML, CSS, Javascript, SCSS<br/>
--> (Framework) Bootstrap, Vuejs, Vuetify, **ReactJS (Learning)**, Jquery<br />
--> (Backend) NodeJS, Mongodb, **Mongoose (Learning)**, Express, Hapi<br />
+-> (Basic) HTML, CSS, Javascript, Dart, SCSS<br/>
+-> (Framework) Bootstrap, Vuejs, Vuetify, **ReactJS (Learning)**, Jquery, **Flutter (Learning)**<br />
+-> (Backend) NodeJS, Mongodb, Mongoose, Express, Hapi<br />
 -> (Tools) GIT, Basic Command Line, Figma
 
 <p align="center">
