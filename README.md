@@ -1,6 +1,6 @@
 ### Hi, I'm **Dimas Andhika Diputra** 👋
 
-🌱 I’m currently learning React and Flutter<br/>
+🌱 I’m currently learning C++<br/>
 ⚡ Fun fact: I am just a 15 years old student who is interested in and has a hobby in programming.<br/>
 
 <h3 align="center">
