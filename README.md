@@ -1,13 +1,8 @@
 ### Hi, I'm **Dimas Andhika Diputra** 👋
 
 🌱 I’m currently learning React and Flutter<br/>
-⚡ Fun fact: I am just a 14 years old student who is interested in and has a hobby in programming.<br/>
-🔭 All of my skills:<br/>
--> (Basic) HTML, CSS, Javascript, Dart, SCSS<br/>
--> (Framework) Bootstrap, Vuejs, Vuetify, **ReactJS (Learning)**, Jquery, **Flutter (Learning)**<br />
--> (Backend) NodeJS, Mongodb, Mongoose, Express, Hapi<br />
--> (Tools) GIT, Basic Command Line, Figma
-<hr>
+⚡ Fun fact: I am just a 15 years old student who is interested in and has a hobby in programming.<br/>
+
 <h3 align="center">
     Github Status
   </h3>
