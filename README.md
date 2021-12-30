@@ -40,4 +40,6 @@
 <a href="https://dimasandhika.vercel.app"><img src="https://img.shields.io/badge/-dimasandhika.vercel.app-3423A6?style=flat&logo=Google-Chrome&logoColor=white"/></a>
 <a href="mailto:dimasandhikadiputra@gmail.com"><img src="https://img.shields.io/badge/-dimasandhikadiputra@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
 <a href="https://instagram.com/dimasandhk"><img src="https://img.shields.io/badge/-@dimasandhk-E4405F?style=flat&logo=Instagram&logoColor=white"/></a>
+<a href="https://www.youtube.com/channel/UCNqSlVr9_fJ-682ILT-MBHA"><img src="https://img.shields.io/badge/-Dimas Andhika-E4405F?style=flat&logo=youtube"/></a>
+<a href="https://www.codewars.com/users/DimasAndhk"><img src="https://www.codewars.com/users/DimasAndhk/badges/micro"></a>
 </p>
