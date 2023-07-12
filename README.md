@@ -3,8 +3,7 @@
 ### 👨🏻‍💻 &nbsp;About Me
 
 💡 &nbsp;I like to explore new technologies and develop software solutions.\
-🎓 &nbsp;I am a 15 year old high school student who is interested and has a hobby in programming.\
-🌱 &nbsp;I'm on track for learning more about Programming Fundamental (C++ & Python), and Algorithms.
+🎓 &nbsp;I am a 16 year old high school student who is interested and has a hobby in programming.\
 
 ### ⚙️ &nbsp;GitHub Analytics
 
