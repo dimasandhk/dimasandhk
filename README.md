@@ -10,12 +10,14 @@
 <p>
 <a href="https://github.com/dimasandhk">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=dimasandhk&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=dimasandhk&layout=compact&langs_count=15&hide=handlebars&theme=algolia"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=dimasandhk&layout=compact&langs_count=9&hide=jupyter%20notebook&theme=algolia"/>
 </a>
 <br>
 <b>Note:</b> Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.
 </p>
 
+### 💭 &nbsp;Currently Learning
+[![roadmap.sh](https://roadmap.sh/card/tall/669a2d19fc0c013a408aa4cd?variant=dark)](https://roadmap.sh)
 
 ### 🤝🏻 &nbsp;Connect with Me
 
