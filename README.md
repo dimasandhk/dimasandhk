@@ -16,9 +16,6 @@
 <b>Note:</b> Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.
 </p>
 
-### 💭 &nbsp;Currently Learning
-[![roadmap.sh](https://roadmap.sh/card/tall/669a2d19fc0c013a408aa4cd?variant=dark)](https://roadmap.sh)
-
 ### 🤝🏻 &nbsp;Connect with Me
 
 <p align="center">
