@@ -3,7 +3,7 @@
 ### 👨🏻‍💻 &nbsp;About Me
 
 💡 &nbsp;I like to explore new technologies and develop software solutions.\
-🎓 &nbsp;I am a 17 year old student who is interested and has a hobby in programming.
+🎓 &nbsp;I am a 18 year old student who is interested and has a hobby in programming.
 
 ### ⚙️ &nbsp;GitHub Analytics
 
