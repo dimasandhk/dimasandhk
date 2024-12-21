@@ -5,17 +5,6 @@
 💡 &nbsp;I like to explore new technologies and develop software solutions.\
 🎓 &nbsp;I am a 18 year old student who is interested and has a hobby in programming.
 
-### ⚙️ &nbsp;GitHub Analytics
-
-<p>
-<a href="https://github.com/dimasandhk">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=dimasandhk&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=dimasandhk&layout=compact&langs_count=9&hide=jupyter%20notebook&theme=algolia"/>
-</a>
-<br>
-<b>Note:</b> Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.
-</p>
-
 ### 🤝🏻 &nbsp;Connect with Me
 
 <p align="center">
