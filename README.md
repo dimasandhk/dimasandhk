@@ -3,9 +3,10 @@
 ### 👨🏻‍💻 &nbsp;About Me
 
 🎓 &nbsp;Final-year Information Technology student at Institut Teknologi Sepuluh Nopember (ITS), Surabaya.\
-💡 &nbsp;Full-stack engineer who likes building across web, UAV systems, and WebGIS.\
-🛰️ &nbsp;Leading ground control station software at the Bayucaraka UAV Research Team: live video and telemetry pipelines, cloud infra, and aerial target detection with YOLOv8.\
-💼 &nbsp;Software Engineer intern at ParagonCorp (Jan–Jul 2026), working on a direct-selling e-commerce platform.\
+💡 &nbsp;Full-stack engineer who likes building across web and UAV systems.\
+💼 &nbsp;Software Engineer intern at Philip Morris International, working on their distribution and sales ecosystem (B2B and B2C).\
+🛰️ &nbsp;2+ years building UAV automation systems at the Bayucaraka UAV Research Team, leading ground control station software: live video and telemetry pipelines, cloud infra, and aerial target detection with YOLOv8.\
+🛒 &nbsp;Previously Software Engineer intern at ParagonCorp (Jan–Jul 2026), working on a direct-selling e-commerce platform.\
 🏆 &nbsp;2nd place at GEMASTIK XVIII and Garuda Hacks 7.0.\
 👨🏻‍🏫 &nbsp;Assistant lecturer at Lab KCKS, teaching Cloud Computing and Database Systems.
 
