@@ -1,0 +1,125 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% Unresolved placeholders are shown in red. Search for \todo to find them all.
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+
+\begin{document}
+
+\title{The Impact of Generative AI Coding Assistants on Developer Code Comprehension in Software Development and Maintenance: A Systematic Literature Review}
+% Note: Sub-titles are not captured in Xplore and should not be used.
+% CRITICAL: Do not use symbols, special characters, footnotes, or math in
+% the paper title or abstract.
+
+\author{
+\IEEEauthorblockN{1\textsuperscript{st} Athalla Barka Fadhil}
+\IEEEauthorblockA{\textit{Department of Information Technology} \\
+\textit{Institut Teknologi Sepuluh Nopember}\\
+Surabaya, Indonesia \\
+5027231018@student.its.ac.id}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Naufal Syafi' Hakim}
+\IEEEauthorblockA{\textit{Department of Information Technology} \\
+\textit{Institut Teknologi Sepuluh Nopember}\\
+Surabaya, Indonesia \\
+5027231022@student.its.ac.id}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Muhammad Dzaky Ahnaf}
+\IEEEauthorblockA{\textit{Department of Information Technology} \\
+\textit{Institut Teknologi Sepuluh Nopember}\\
+Surabaya, Indonesia \\
+5027231039@student.its.ac.id}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Dimas Andhika Diputra}
+\IEEEauthorblockA{\textit{Department of Information Technology} \\
+\textit{Institut Teknologi Sepuluh Nopember}\\
+Surabaya, Indonesia \\
+5027231074@student.its.ac.id}
+}
+
+\maketitle
+
+\begin{abstract}
+Generative AI coding assistants are now widely used in software development, yet their effect on how well developers understand code remains unclear. This paper presents a systematic literature review of primary empirical studies published between 2021 and 2026 in which human developers used large language model based coding assistants for realistic development or maintenance tasks, and in which code comprehension was measured directly or through close proxies such as cognitive load. Following the guidelines of Kitchenham and Charters, we searched Scopus, IEEE Xplore, and ScienceDirect, screened records against predefined inclusion and exclusion criteria, assessed study quality, and extracted data to answer four research questions: how assistants affect comprehension, which assistants and forms of comprehension support have been studied, how comprehension has been measured, and which challenges limit it. Twenty-four studies published between 2024 and 2026 met the criteria and all passed quality assessment. Effects on comprehension were reported as positive in 15 studies and mixed in 8, and one study did not compare AI use against no AI use. The clearest gains came from purpose-built tools, such as anchored explanations, visual aids, and validation support, evaluated in small controlled studies, whereas a practitioner experiment with general-purpose AI found lower accuracy on code with structural issues. Comprehension was measured directly in 8 studies and otherwise through proxies such as cognitive load, task performance, or perceived understanding. The most frequently reported challenges were inaccurate or untrusted output, missing context, effort in formulating prompts, and over-reliance that can lead to shallow understanding. The review also discusses implications for tool designers, practitioners, and future empirical studies.
+\end{abstract}
+
+\begin{IEEEkeywords}
+generative AI, coding assistants, large language models, code comprehension, software maintenance, systematic literature review
+\end{IEEEkeywords}
+
+%% ====================================================================
+%% I. INTRODUCTION
+%% ====================================================================
+\section{Introduction}\label{sec:intro}
+
+Understanding existing source code is one of the most frequent activities in software engineering. In a field study of 78 professional developers working on seven real projects, Xia et al.\ found that developers spent roughly 58\% of their working time on program comprehension activities \cite{xia2018}. Software maintenance, in which engineers must modify, debug, and review code they did not write, depends heavily on this activity.
+
+Generative AI (GenAI) coding assistants built on large language models (LLMs) have rapidly entered this workflow. The Codex model introduced in 2021, whose production version powers GitHub Copilot \cite{chen2021}, marked the arrival of developer-facing assistants, and adoption has since become mainstream: in the 2025 Stack Overflow Developer Survey, 84\% of respondents reported using or planning to use AI tools in their development process, up from 76\% a year earlier \cite{so2025}. These assistants change what comprehension demands of a developer. Developers can now ask an assistant to explain unfamiliar code, but they must also understand, validate, and maintain code that an assistant produced and that no human colleague wrote.
+
+Recent empirical work reflects both sides of this change. On the supportive side, researchers have designed and evaluated assistants intended to help developers understand code, including LLM-based explanations inside the IDE \cite{nam2024}, anchored explanations of just-generated code \cite{yan2024}, LLM-generated context that enriches code comprehension \cite{grandel2026}, and interactive visual aids combined with LLMs for navigating unfamiliar codebases \cite{kim2026}. On the cautionary side, studies of how developers validate and repair LLM-generated code examine their behaviour using IDE traces, eye tracking, and cognitive-workload measures \cite{tang2024}, or test whether live programming helps them validate generated programs \cite{ferdowsi2024}. A study of proactive AI programming support reports trade-offs between assistance and developers' understanding, including comprehension loss and cognitive burden \cite{pu2025}. Practitioners voice a similar concern: the most common frustration in the same survey, cited by 66\% of respondents, is AI solutions that are ``almost right, but not quite'' \cite{so2025}, which are outputs a developer has to read and check before trusting.
+
+Existing secondary studies address adjacent questions. Mohamed et al.\ reviewed 39 studies on how LLM assistants affect developer productivity, and note risks such as cognitive offloading \cite{mohamed2026}. Qiao et al.\ reviewed 31 studies published between 2022 and 2024 on GenAI assistants for code comprehension, but frame their implications for computing education \cite{qiao2026}. To the best of our knowledge, no systematic review has yet synthesized the evidence on how GenAI coding assistants affect the code comprehension of developers performing realistic software development and maintenance tasks. This evidence is also hard to consolidate by reading individual studies. The primary studies cited above appear in software engineering, human--computer interaction, and program comprehension venues, and they operationalize comprehension in different ways, for example through comprehension quizzes and cognitive-load instruments \cite{kim2026} or through eye tracking \cite{tang2024}. Productivity, task completion time, or code quality alone do not show whether a developer understands the code, so studies that report only those outcomes cannot answer the question either.
+
+To address this gap, this paper presents a systematic literature review (SLR) conducted according to the guidelines of Kitchenham and Charters \cite{kitchenham2007}, with study flow reported in the style of PRISMA 2020 \cite{page2021}. The review covers peer-reviewed primary empirical studies published between January 2021 and December 2026 in which human developers use interactive GenAI or LLM-based coding assistants for realistic software development or maintenance work, and in which code comprehension is measured directly or through a close proxy such as cognitive load, knowledge retention, or the ability to correctly modify or debug code. Model-only benchmark studies and studies confined to introductory programming education are out of scope. The review is guided by four research questions:
+
+\begin{itemize}
+\item \textbf{RQ1:} How does the use of GenAI coding assistants affect developers' code comprehension during software development and maintenance tasks?
+\item \textbf{RQ2:} What GenAI coding assistants and forms of comprehension support have been used by developers in these studies?
+\item \textbf{RQ3:} How has developer code comprehension been measured, and in what study designs, tasks, and codebase contexts?
+\item \textbf{RQ4:} What challenges limit developers' code comprehension when working with GenAI assistants?
+\end{itemize}
+
+This paper makes the following contributions:
+\begin{enumerate}
+\item A documented, protocol-driven evidence base of primary empirical studies, with eligibility criteria that separate evidence of developer comprehension from evidence of productivity, code quality, or model accuracy alone.
+\item A catalogue of the GenAI coding assistants, interaction modes, and forms of comprehension support used in these studies (RQ2).
+\item An overview of how comprehension has been measured and in which study designs, tasks, and codebase contexts, distinguishing direct measures from close proxies (RQ3).
+\item A synthesis of the reported effects on comprehension and of the challenges that limit it (RQ1 and RQ4), with implications for tool designers, practitioners, and future studies.
+\end{enumerate}
+
+The remainder of this paper is organized as follows. Section~\ref{sec:method} describes the review methodology, including the search strategy, selection criteria, quality assessment, and data extraction. Section~\ref{sec:results} presents the results for each research question. Section~\ref{sec:discussion} discusses the findings and their implications, Section~\ref{sec:threats} discusses threats to validity, and Section~\ref{sec:conclusion} concludes the paper.
+
+%% ====================================================================
+%% PLACEHOLDER SECTIONS (replace with the next chapters)
+%% ====================================================================
+\section{Methodology}\label{sec:method}
+\todo{To be written.}
+
+\section{Results}\label{sec:results}
+\todo{To be written.}
+
+\section{Discussion}\label{sec:discussion}
+\todo{To be written.}
+
+\section{Threats to Validity}\label{sec:threats}
+\todo{To be written.}
+
+\section{Conclusion}\label{sec:conclusion}
+\todo{To be written.}
+
+\begin{thebibliography}{00}
+\bibitem{xia2018} X. Xia, L. Bao, D. Lo, Z. Xing, A. E. Hassan, and S. Li, ``Measuring program comprehension: A large-scale field study with professionals,'' in \textit{Proc. 40th Int. Conf. Softw. Eng. (ICSE)}, Gothenburg, Sweden, 2018, doi: 10.1145/3180155.3182538.
+\bibitem{chen2021} M. Chen et al., ``Evaluating large language models trained on code,'' 2021, arXiv:2107.03374. [Online]. Available: https://arxiv.org/abs/2107.03374
+\bibitem{so2025} Stack Overflow, ``2025 Developer Survey: AI,'' 2025. [Online]. Available: https://survey.stackoverflow.co/2025/ai
+\bibitem{nam2024} D. Nam, A. Macvean, V. Hellendoorn, B. Vasilescu, and B. Myers, ``Using an LLM to help with code understanding,'' in \textit{Proc. IEEE/ACM 46th Int. Conf. Softw. Eng. (ICSE)}, 2024, doi: 10.1145/3597503.3639187.
+\bibitem{yan2024} L. Yan, A. Hwang, Z. Wu, and A. Head, ``Ivie: Lightweight anchored explanations of just-generated code,'' in \textit{Proc. CHI Conf. Human Factors Comput. Syst.}, 2024, doi: 10.1145/3613904.3642239.
+\bibitem{grandel2026} S. Grandel, S. T. Andersen, Y. Huang, and K. Leach, ``ComCat: Expertise-guided context generation to enhance code comprehension,'' \textit{ACM Trans. Softw. Eng. Methodol.}, 2026, doi: 10.1145/3742475.
+\bibitem{kim2026} Y. Kim, K. Jang, H. Song, M. Shin, and B. Suh, ``CodeVoyager: Integrating interactive visual aids with LLMs for code comprehension,'' in \textit{Proc. Int. Conf. Intell. User Interfaces (IUI)}, 2026, doi: 10.1145/3742413.3789057.
+\bibitem{tang2024} N. Tang et al., ``Developer behaviors in validating and repairing LLM-generated code using IDE and eye tracking,'' in \textit{Proc. IEEE Symp. Visual Lang. Human-Centric Comput. (VL/HCC)}, 2024, doi: 10.1109/VL/HCC60511.2024.00015.
+\bibitem{ferdowsi2024} K. Ferdowsi, R. Huang, M. B. James, N. Polikarpova, and S. Lerner, ``Validating AI-generated code with live programming,'' in \textit{Proc. CHI Conf. Human Factors Comput. Syst.}, 2024, doi: 10.1145/3613904.3642495.
+\bibitem{pu2025} K. Pu et al., ``Assistance or disruption? Exploring and evaluating the design and trade-offs of proactive AI programming support,'' in \textit{Proc. CHI Conf. Human Factors Comput. Syst.}, 2025, doi: 10.1145/3706598.3713357.
+\bibitem{mohamed2026} A. Mohamed, M. Assi, and M. Guizani, ``The impact of LLM-assistants on software developer productivity: A systematic review and mapping study,'' \textit{ACM Trans. Softw. Eng. Methodol.}, 2026, doi: 10.1145/3809494.
+\bibitem{qiao2026} Y. Qiao, M. I. H. Shihab, and C. Hundhausen, ``A systematic literature review of the use of GenAI assistants for code comprehension: Implications for computing education research and practice,'' \textit{ACM Trans. Comput. Educ.}, vol. 26, no. 2, 2026, doi: 10.1145/3785366.
+\bibitem{kitchenham2007} B. Kitchenham and S. Charters, ``Guidelines for performing systematic literature reviews in software engineering,'' EBSE Tech. Rep. EBSE-2007-01, 2007.
+\bibitem{page2021} M. J. Page et al., ``The PRISMA 2020 statement: An updated guideline for reporting systematic reviews,'' \textit{BMJ}, vol. 372, art. n71, 2021, doi: 10.1136/bmj.n71.
+\end{thebibliography}
+
+\end{document}
